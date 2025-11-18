@@ -37,14 +37,6 @@ Pesawat A320 memiliki jumlah ulasan paling banyak dengan jumlah sebanyak 263 ula
 
 ---
 
-## Proses Analisis
-### 2. Data Analysis
-* Membuat analisis *rolling total* untuk melihat akumulasi total PHK dari bulan ke bulan.
-* Mengidentifikasi perusahaan, industri, negara, dan stage dengan jumlah PHK tertinggi.
-* Mengidentifikasi industri & stage yang banyak mengalami kegagalan total yang mem-PHK seluruh karyawannya. 
-
----
-
 ## Conclusion
 Proyek pembuatan dashboard data British Airways Review ini memberi saya pemahaman yang lebih advance akan penggunaan Tabelau dalam membuat dashboard professional yang lebih interaktif dari project analisis yang saya lakukan sebelumnya. 
 
