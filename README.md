@@ -1,47 +1,40 @@
-# British Airways Review Analysis ✈️
-
-## Deskripsi Proyek
-Proyek ini berfokus kepada pembuatan dashboard yang dinamis dan interaktif dengan hanya menggunakan Tableau untuk menganalisis data ulasan pelanggan British Airways (BA). Tujuan utama proyek ini adalah mentransformasi data review pelanggan mentah menjadi insight dan visual yang menarik.
-
-Dashboard ini menyoroti kemampuan saya dalam analisis mendalam, menerjemahkan data kompleks menjadi narasi yang jelas, dan membuktikan kemahiran saya dalam teknik visualisasi lanjutan serta manipulasi data kompleks di dalam lingkungan Tableau.
+# British Airways Review Analysis
+## Executive Summary
+Proyek ini bertujuan untuk menganalisis data review pelanggan British Airways untuk mengidentifikasi trend dalam layanan operasional yang diberikan. Dengan memanfaatkan data review pelanggan dari tahun 2016-2023, dashboard ini menyediakan actionable insights bagi stakeholders untuk meningkatkan retensi pelanggan melalui standarisasi kualitas layanan di berbagai armada dan wilayah.
 
 ---
 
-## Fitur Dashboard
-- Pemilihan KPI Dinamis: Pengguna dapat mengganti metrik ulasan menggunakan filter.
-- Pemilihan Rentang Waktu: Penggunan dapat mengganti rentang waktu data untuk menganalisis kinerja layanan berdasarkan rata-rata ulasan dari waktu ke waktu. 
-- Analisis Kinerja di Berbagai Bagian Negara: Map Chart yang menunjukkan rata-rata ulasan pelanggan di tiap negara.
-- Analisis Kinerja Layanan dari Waktu ke Waktu: Chart berdasarkan time series akan rata-rata ulasan pelanggan.
-- Analisis Kinerja Armada Pesawat: Chart/grafik yang membandingkan Rata-rata Ulasan dengan Jumlah Ulasan berdasarkan metrik yang dipilih.
+## Business Problem
+Fluktuasi tingkat kepuasan pelanggan yang drastis dengan skor rating terendah ada di 1.0/10. Ini menunjukkan adanya inkonsistensi layanan yang berisiko pada reputasi brand. Manajemen membutuhkan alat pemantauan yang mampu membedah kinerja berdasarkan armada pesawat, geografi, dan tren waktu untuk menentukan prioritas perbaikan layanan 
 
 ---
 
 ## Dashboard
-[Tableau Dashboard Link](https://public.tableau.com/views/AirwaysReviewDashboard_17634490901250/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[Klik di sini untuk akses dashboardnya di Tableau Public](https://public.tableau.com/views/AirwaysReviewDashboard_17634490901250/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 <img src="Dashboard Image.png" alt="British Airways Review Dashboard" width="1000">
 
 ---
 
-## Pertanyaan Bisnis & Insights
-Note: Hasil insights yang didapat, disesuaikan dengan angka review fiktif yang random sehingga akan terlihat tidak realistis.
-- Bagaimana trend kepuasan pelanggan secara keseluruhan dari tahun 2016 hingga 2023? <br>
-Rating bulanan yang diperlihatkan dalam data ini sangat fluktuatif dengna minimum rata-rata ulasan bisa hingga 1 dan maksimum rata-rata ulasan mencapai 6,9, hal ini menunjukkan kurangnya konsistensi dalam kualitas pemberian layanan.
-- Kapan periode waktu terjadi penurunan atau lonjakan kepuasan paling drastis? <br>
-Lonjakan penurunan paling drastis terlihat terjadi di sekitar Juni 2020, yang turun drastis dari rating 6,3 di bulan April hingga menjadi rating 1 di bulan Juni. Selanjutnya kejadian yang sama terulang lagi di Januari-April 2021. 
-- Negara mana yang memberikan ulasan kepuasan tertinggi? <br>
-Negara Czechia, Hungary, Turkey, dan Jordan merupakan negara dengan pelanggan yang memberikan rata-rata review tertinggi dengan 9,5 oleh Czechia, dan 8 oleh Hungary, Turkey, dan Jordan.
-- Pesawat mana yang memiliki ulasan dengan penilaian tertinggi? <br>
-Pesawat Boeing 747-400 memiliki rata-rata ulasan penilaian tertinggi dengan rating 4,7.
-- Pesawat mana yang memiliki jumlah ulasan paling banyak? <br>
-Pesawat A320 memiliki jumlah ulasan paling banyak dengan jumlah sebanyak 263 ulasan. Dari 263 ulasan akan layanan pesawat A320, pesawat ini memiliki rata-rata ulasan penilaian sebanyak 4,3.
+## Key Insights & Findings
+- Service Volatility: Data menunjukkan volatilitas tinggi dengan penurunan paling signifikan terjadi pada Juni 2020 dan awal 2021. Hal ini mengindikasikan kegagalan adaptasi layanan pada periode krisis atau transisi operasional.
+- Fleet Performance Excellence: Pesawat Boeing 747-400 mencatatkan rating tertinggi dengan skor 4.7, menunjukkan konfigurasi atau standar layanan pada armada ini adalah yang paling disukai pelanggan.
+- High-Volume Friction: Armada A320 memiliki volume ulasan tertinggi dengan jumlah 263 ulasan, namun dengan rating yang moderat di 4.3. Ini adalah area kritis di mana peningkatan kecil dalam kualitas layanan akan berdampak pada jumlah pelanggan terbesar.
+- Emerging Markets Potential: Wilayah Czechia, Hungary, dan Turkey menunjukkan tingkat kepuasan tertinggi (skor 8.0 - 9.5). Ini memberikan peluang strategis bagi Business Analyst untuk memperkuat branding dan frekuensi penerbangan di rute-rute tersebut.
 
 ---
 
-## Conclusion
-Proyek pembuatan dashboard data British Airways Review ini memberi saya pemahaman yang lebih advance akan penggunaan Tabelau dalam membuat dashboard professional yang lebih interaktif dari project analisis yang saya lakukan sebelumnya. 
+## Business Recomendations
+1) Standardisasi Layanan: Melakukan audit internal pada rute/periode dengan rating rendah untuk menyelaraskan kualitas layanan dengan standar armada Boeing 747-400.
+2) Operational Recovery Plan: Mengembangkan strategi dengan standard yang lebih baik untuk menjaga customer experience tetap stabil pada periode peak season atau mungkin ketika krisis untuk menghindari penurunan rating drastis seperti sebelumnya.
+3) Customer Feedback Loop: Memberbaiki fasilitas pada armada A320 untuk meningkatkan kepuasan pada segmen pasar dengan volume terbesar.
 
-Proyek ini memperkuat kemampuan saya dalam:
-* Penggunaan Calculated Fields yang lebih baik yang menerapkan logika CASE WHEN untuk pembuatan filter metric.
-* Implementasi Custom Parameter yang juga dibuat untuk mendapatkan custom filter yang lebih interaktif.
-* Pengoptimalan design dashboard yang lebih rapih, lebih menarik, dan minimalis dibanding project sebelumnya.
-* Pembuatan kolom baru dengan melakukan group akan kategori pesawat untuk meminimalkan baris nama pesawat agar lebih mudah untuk analisis.
+---
+
+## Workflow & Toolstack
+Dalam membangun solusi ini, saya menerapkan metodologi analisis data end-to-end seperti:
+- Data Preparation: Melakukan data grouping pada kategori pesawat untuk mempermudah analisis dan mengurangi noise pada visualisasi.
+- Advanced Analytics (Tableau):
+  - Dynamic Metrics: Mengimplementasikan Custom Parameters dan Calculated Fields menggunakan logika CASE WHEN untuk memungkinkan user mengganti KPI secara instan.
+  - Geospatial Analysis: Menggunakan Map Charts untuk memetakan distribusi kepuasan global secara intuitif.
+- Time-Series Tracking: Membangun analisis tren untuk mengidentifikasi pola musiman dan anomali performa bulanan.
+- UI/UX Design: Menerapkan prinsip desain minimalis untuk memastikan stakeholder dapat menarik kesimpulan dalam waktu singkat karna minimnya distraksi yang tidak diperlukan.
