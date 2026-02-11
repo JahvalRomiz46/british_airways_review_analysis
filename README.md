@@ -1,5 +1,5 @@
 # British Airways Review Analysis
-## Executive Summary
+## Summary
 Proyek ini bertujuan untuk menganalisis data review pelanggan British Airways untuk mengidentifikasi trend dalam layanan operasional yang diberikan. Dengan memanfaatkan data review pelanggan dari tahun 2016-2023 yang memiliki jumlah baris sebanyak 1300+, dashboard ini menyediakan actionable insights bagi stakeholders untuk meningkatkan retensi pelanggan melalui standarisasi kualitas layanan di berbagai armada dan wilayah.
 
 ---
