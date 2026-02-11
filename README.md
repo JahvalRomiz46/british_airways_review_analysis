@@ -1,6 +1,6 @@
 # British Airways Review Analysis
 ## Executive Summary
-Proyek ini bertujuan untuk menganalisis data review pelanggan British Airways untuk mengidentifikasi trend dalam layanan operasional yang diberikan. Dengan memanfaatkan data review pelanggan dari tahun 2016-2023, dashboard ini menyediakan actionable insights bagi stakeholders untuk meningkatkan retensi pelanggan melalui standarisasi kualitas layanan di berbagai armada dan wilayah.
+Proyek ini bertujuan untuk menganalisis data review pelanggan British Airways untuk mengidentifikasi trend dalam layanan operasional yang diberikan. Dengan memanfaatkan data review pelanggan dari tahun 2016-2023 yang memiliki jumlah baris sebanyak 1300+, dashboard ini menyediakan actionable insights bagi stakeholders untuk meningkatkan retensi pelanggan melalui standarisasi kualitas layanan di berbagai armada dan wilayah.
 
 ---
 
@@ -31,10 +31,8 @@ Fluktuasi tingkat kepuasan pelanggan yang drastis dengan skor rating terendah ad
 ---
 
 ## Workflow & Toolstack
-Dalam membangun solusi ini, saya menerapkan metodologi analisis data end-to-end seperti:
-- Data Preparation: Melakukan data grouping pada kategori pesawat untuk mempermudah analisis dan mengurangi noise pada visualisasi.
-- Advanced Analytics (Tableau):
-  - Dynamic Metrics: Mengimplementasikan Custom Parameters dan Calculated Fields menggunakan logika CASE WHEN untuk memungkinkan user mengganti KPI secara instan.
-  - Geospatial Analysis: Menggunakan Map Charts untuk memetakan distribusi kepuasan global secara intuitif.
-- Time-Series Tracking: Membangun analisis tren untuk mengidentifikasi pola musiman dan anomali performa bulanan.
-- UI/UX Design: Menerapkan prinsip desain minimalis untuk memastikan stakeholder dapat menarik kesimpulan dalam waktu singkat karna minimnya distraksi yang tidak diperlukan.
+Dalam membangun solusi ini, saya menerapkan metodologi analisis seperti:
+- Melakukan data preparation dengan mengekstrak informasi lebih banyak, salah satunya melakukan grouping pada kategori pesawat untuk mempermudah analisis dan mengurangi noise pada visualisasi.
+- Membuat dashboard menggunakan Tableau dan memanfaatkan fitur Custom Parameters dan Calculated Fields untuk membuat filter button yang lebih advance & spesifik sesuai kebutuhan dalam memfilter KPI.
+- Membangun analisis tren untuk mengidentifikasi pola musiman dan anomali performa bulanan.
+- Menerapkan prinsip desain dashboard yang minimalis/bersih untuk memastikan stakeholder dapat menarik kesimpulan dalam waktu singkat karna minimnya distraksi yang tidak diperlukan.
