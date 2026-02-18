@@ -1,38 +1,44 @@
-# British Airways Review Analysis
-## Summary
-Proyek ini bertujuan untuk menganalisis data review pelanggan British Airways untuk mengidentifikasi trend dalam layanan operasional yang diberikan. Dengan memanfaatkan data review pelanggan dari tahun 2016-2023 yang memiliki jumlah baris sebanyak 1300+, dashboard ini menyediakan actionable insights bagi stakeholders untuk meningkatkan retensi pelanggan melalui standarisasi kualitas layanan di berbagai armada dan wilayah.
+# ✈️ Aviation Customer Experience & Service Recovery Analysis - British Airways
 
----
-
-## Business Problem
-Fluktuasi tingkat kepuasan pelanggan yang drastis dengan skor rating terendah ada di 1.0/10. Ini menunjukkan adanya inkonsistensi layanan yang berisiko pada reputasi brand. Manajemen membutuhkan alat pemantauan yang mampu membedah kinerja berdasarkan armada pesawat, geografi, dan tren waktu untuk menentukan prioritas perbaikan layanan 
-
----
-
-## Dashboard
-[Klik di sini untuk akses dashboardnya di Tableau Public](https://public.tableau.com/views/AirwaysReviewDashboard_17634490901250/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 <img src="Dashboard Image.png" alt="British Airways Review Dashboard" width="1000">
 
+[Akses dashboard di Tableau Public](https://public.tableau.com/views/AirwaysReviewDashboard_17634490901250/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+## Business Context
+Dalam industri penerbangan, *Customer Experience* (CX) adalah kunci utama retensi penumpang. British Airways menghadapi tantangan berat berupa fluktuasi kepuasan pelanggan yang sangat drastis, yang berpotensi merusak reputasi *brand* dan menurunkan tingkat loyalitas penumpang di tengah ketatnya persaingan rute internasional.
+
+Proyek ini bertujuan sebagai simulasi data analyst dalam menganalisis lebih dari 1.300 data ulasan pelanggan (2016-2023) untuk menemukan *root cause* dari sentimen negatif, mengevaluasi standar pelayanan antar-armada, dan memberikan panduan strategis bagi manajemen operasional untuk menstabilkan kualitas layanan.
+
+## Problem Statement & Objectives
+Fokus analisis ini adalah mengidentifikasi titik lemah (*pain points*) dalam *customer journey*. Objektif utamanya adalah:
+1.  **Service Bottleneck Identification:** Menemukan fasilitas atau layanan spesifik yang paling banyak memicu keluhan.
+2.  **Fleet Consistency Audit:** Membandingkan tingkat kepuasan antar-tipe pesawat untuk melihat inkonsistensi fasilitas.
+3.  **Trend Monitoring:** Menganalisis stabilitas performa layanan dari waktu ke waktu, terutama di masa transisi operasional.
+
+## Tools & Methodology
+-   **Data Preparation:** Tableau (Melakukan *grouping* pada pesawat dengan ulasan < 50 ke dalam kategori "Others" untuk mengurangi *noise* dan memfokuskan analisis pada armada utama).
+-   **Data Visualization:** Tableau (Membangun *interactive dashboard* menggunakan *Custom Parameters* dan *Calculated Fields* untuk analisis metrik dinamis).
+
+## Key Insights (Executive Summary)
+
+### 1. Krisis Parah pada "In-Flight Entertainment" & Katering
+Meskipun staf kabin bernilai lebih tinggi, fasilitas pendukung adalah kelemahan terbesar maskapai. *Avg. Entertainment* tercatat di angka kritis **1.4/10**, disusul oleh *Food & Beverages* (**2.4**) dan *Value for Money* (**2.8**). Ini membuktikan bahwa pelanggan merasa harga tiket mahal yang mereka bayar tidak sepadan dengan fasilitas makanan dan hiburan.
+
+### 2. Inkonsistensi Kualitas Armada
+Terdapat kesenjangan kualitas pengalaman terbang yang nyata antar pesawat. Armada *legacy* Boeing 747-400 adalah yang paling disukai dengan rating 4.7. Sebaliknya, armada Airbus seri A321 memiliki rating terburuk (3.6). Lebih krusial lagi, armada A320 yang memiliki pencatatan volume feedback terbanyak (263 ulasan) hanya mampu memberikan kepuasan moderat di angka 4.3.
+
+### 3. Volatilitas Layanan yang Ekstrem
+Grafik tren *Average Overall Rating by Month* menunjukkan pergerakan yang sangat tidak stabil, dengan skor yang sering kali anjlok mendekati angka 1. Hal ini mengindikasikan ketiadaan Standar Operasional Prosedur (SOP) *Customer Service* yang ketat, sehingga kualitas pelayanan sangat bergantung pada "siapa kru yang bertugas" dan "kapan penerbangan terjadi", alih-alih pada standar perusahaan.
+
+## Strategic Recommendations
+
+* **Audit Vendor Katering & Perombakan In-Flight Entertainment:** Manajemen harus segera meninjau ulang kontrak dengan vendor makanan saat ini. Selain itu, diperlukan *Capex* (Capital Expenditure) untuk memperbarui sistem *In-Flight Entertainment* (IFE) yang usang, mengingat skor 1.4 adalah titik terendah dari seluruh layanan operasional.
+* **Fokus Retrofit pada Armada A320 & A321:** Karena A320 memiliki volume penumpang tertinggi (terlihat dari jumlah feedback yang lebih banyak), peningkatan kecil pada kursi (*Seat Comfort* saat ini di 2.9) atau fasilitas di armada ini akan berdampak pada peningkatan *Overall Rating* perusahaan.
+* **Standardisasi Layanan (SOP):** Lakukan investigasi internal terhadap kru dan konfigurasi pesawat Boeing 747-400 untuk memahami *best practice* yang membuat mereka mendapat rating 4.7. Terapkan standar tersebut atau bahkan yang lebih baik lagi di seluruh lini armada untuk meredam volatilitas grafik bulanan.
+
+## 📂 Repository Structure
+-   `/data`: Raw data (csv) keseluruhan dataset.
+-   `Airways Review Dashboard.twbx`: File Tableau berisi dashboard interaktif.
+
 ---
-
-## Key Insights & Findings
-- Service Volatility: Data menunjukkan volatilitas tinggi dengan penurunan paling signifikan terjadi pada Juni 2020 dan awal 2021. Hal ini mengindikasikan kegagalan adaptasi layanan pada periode krisis atau transisi operasional.
-- Fleet Performance Excellence: Pesawat Boeing 747-400 mencatatkan rating tertinggi dengan skor 4.7, menunjukkan konfigurasi atau standar layanan pada armada ini adalah yang paling disukai pelanggan.
-- High-Volume Friction: Armada A320 memiliki volume ulasan tertinggi dengan jumlah 263 ulasan, namun dengan rating yang moderat di 4.3. Ini adalah area kritis di mana peningkatan kecil dalam kualitas layanan akan berdampak pada jumlah pelanggan terbesar.
-- Emerging Markets Potential: Wilayah Czechia, Hungary, dan Turkey menunjukkan tingkat kepuasan tertinggi (skor 8.0 - 9.5). Ini memberikan peluang strategis bagi Business Analyst untuk memperkuat branding dan frekuensi penerbangan di rute-rute tersebut.
-
----
-
-## Business Recomendations
-1) Standardisasi Layanan: Melakukan audit internal pada rute/periode dengan rating rendah untuk menyelaraskan kualitas layanan dengan standar armada Boeing 747-400.
-2) Operational Recovery Plan: Mengembangkan strategi dengan standard yang lebih baik untuk menjaga customer experience tetap stabil pada periode peak season atau mungkin ketika krisis untuk menghindari penurunan rating drastis seperti sebelumnya.
-3) Customer Feedback Loop: Memberbaiki fasilitas pada armada A320 untuk meningkatkan kepuasan pada segmen pasar dengan volume terbesar.
-
----
-
-## Workflow & Toolstack
-Dalam membangun solusi ini, saya menerapkan metodologi analisis seperti:
-- Melakukan data preparation dengan mengekstrak informasi lebih banyak, salah satunya melakukan grouping pada kategori pesawat untuk mempermudah analisis dan mengurangi noise pada visualisasi.
-- Membuat dashboard menggunakan Tableau dan memanfaatkan fitur Custom Parameters dan Calculated Fields untuk membuat filter button yang lebih advance & spesifik sesuai kebutuhan dalam memfilter KPI.
-- Membangun analisis tren untuk mengidentifikasi pola musiman dan anomali performa bulanan.
-- Menerapkan prinsip desain dashboard yang minimalis/bersih untuk memastikan stakeholder dapat menarik kesimpulan dalam waktu singkat karna minimnya distraksi yang tidak diperlukan.
+*Disclaimer: Analisis ini menggunakan dataset publik review pelanggan sebagai simulasi Data Analysis/Business Intelligence.*
